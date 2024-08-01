@@ -1,0 +1,12 @@
+/* POPO */
+main{
+    padding: 8rem;
+    border: 20px black solid;
+    margin: 5rem;
+    border-radius: 2rem;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+}

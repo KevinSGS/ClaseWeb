@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 31 de Julio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+       <nav>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="pagina2.html">pagina 2</a></li>
+        </ol>
+       </nav>
+    </header>
+    <main>
+        <h3>Formulario</h3>
+      <!--En action deberia de tener una liga PHP por ejemplo-->
+      <form action="" method="get">
+         <label for="name">Nombre</label>
+         <input type="text" name="fname">
+         <label for="name">Apellido</label>
+         <input type="text" name="lname">
+         <label for="Email">Email</label>
+         <input type="email" name="email">
+         <input type="submit" value="Suscribirme">
+      </form>
+      <h3>Formulario 2</h3>
+      <form action="" method="get">
+      <fieldset>
+        <legend>¿Cual prefieres?</legend>
+        <label><input type="radio" name="radio" valor="html">HTML</label>
+        <label><input type="radio" name="radio" valor="css">CSS</label>
+        <label><input type="radio" name="radio" valor="jv">JV</label>
+        <button>save</button>
+      </fieldset>
+      </form>
+
+      <h3>Formulario 3</h3>
+      <form action="">
+        <label for="navegadores">¿Que navegador estas usando?</label>
+        <input list="navegadores" name="navegadores" placeholder="Elige navegador">
+        <datalist id="navegadores">
+          <optgroup>
+              <option value="Edge"></option>
+              <option value="Firefox"></option>
+              <option value="Chrome"></option>
+              <option value="Safari"></option>
+              <option value="Opera"></option>
+          </optgroup>
+        </datalist>
+        <input type="button" value="submit">
+        <label for="file">file</label>
+        <progress value="75" max="100">75%</progress>
+      </form>
+
+    </main>
+    <aside>
+        <h2>Saga Principal</h2>
+
+        <ol>
+            <li><a href="#">Fatal Frame 1</a></li>
+            <li><a href="#">Fatal Frame 2</a></li>
+            <li><a href="#">Fatal Frame 3</a></li>
+            <li><a href="#">Fatal Frame 4</a></li>
+            <li><a href="#">Fatal Frame 5</a></li>
+        </ol>
+        
+    </aside>
+    <footer>
+        <p>Sitio de Kevin®</p>
+    </footer>
+</body>
+</html>
