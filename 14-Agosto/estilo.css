@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+
+h1{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    padding: 1rem;
+    color: white;
+}
+
+header{
+background-color: rgb(231, 231, 231);
+}
+
+main{
+    background-color: rgb(165, 55, 55);
+}
+
+aside{
+    background-color: rgba(54, 121, 180, 0.478);
+}
+footer{
+    background-color: rgb(54, 54, 54);
+}
+
+header h1{
+
+    color: black;
+}
+
+/* diseño responsivo con media queries */
+
+@media (max-width: 600px) {
+    body {
+        background: rgb(0, 0, 0);
+    }
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+        gap: 0,5rem;
+        
+    }
+    }
+
+@media (min-width: 600px) {
+/* body {
+    background: rgba(150, 53, 53, 0.332);
+} */
+
+#container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;
+    grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    grid-area: cabeza;
+}
+main {
+    margin-left: 1rem;
+    border-radius: 1rem;
+    grid-area: principal;
+}
+aside {
+    margin-right: 1rem;
+    border-radius: 1rem;
+    grid-area: lado;
+}
+footer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    grid-area: pie;
+}
+h1{
+    font-size: 20px;
+}
+body {
+    background: rgb(0, 0, 0);
+}
+}
