@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+
+/* estilos tipograficos */
+
+.mon-500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .serif-400 {
+    font-family: "Anek Devanagari", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+  }
+  p{
+    line-height: 1,6;
+  }
+
+  p li{
+    line-height: 1,6;
+  }
+  .columnas{
+    columns: 3 400px;
+    gap: 1rem;
+  }
+
+  h1, p, figcaption {
+    padding: 0,5rem;
+    padding-left: 0,5rem;
+    padding-right: 0,5rem;
+  }
+
+  .clip-me {
+    clip-path: polygon(0 4%, 10% 4%, 31% 2%, 36% 6%, 47% 18%, 100% 19%, 100% 90%, 43% 91%, 15% 96%, 0 82%);
+
+  }
+
+ .clip-me2{
+    clip-path: circle(46.2% at 50% 50%);
+    float: right;
+    width: 50%;
+    clip-path: circle(46.2% at 50% 50%);
+ }
