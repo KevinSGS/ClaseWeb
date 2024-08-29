@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabeza">
+            <p>header</p>
+        </header>
+        <main class="principal">
+            <h1>Vivus y scroll reveal</h1>
+            <p>Vivus is a lightweight JavaScript class (with no dependencies) that allows you to animate SVGs, giving them the appearance of being drawn. There are a variety of different animations available, as well as the option to create a custom script to draw your SVG in whatever way you like.</p>
+            <div id="my-div"></div>
+        </main>
+        <aside class="lado">
+            <p>aside</p>
+        </aside>
+        <footer class="patas">
+            <p>Footer</p>
+        </footer>
+    </div>
+    <script src="js/vivus.js"></script>
+    <script>
+        new Vivus ('my-div', {duration: 100, type: 'oneByOne', file: 'img/ilustracion.svg'},);
+    </script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.cabeza', { easing: 'ease-in' });
+    ScrollReveal().reveal('.principal', { delay: 500, scale: 0.80 });
+    ScrollReveal().reveal('.lado', { rotate: {x: 100, z: 100} });
+    ScrollReveal().reveal('.patas', { delay: 250 });
+</script>
+</body>
+</html>
